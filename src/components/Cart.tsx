@@ -8,6 +8,7 @@ import TableCell from '@mui/material/TableCell'
 import TableContainer from "@mui/material/TableContainer"
 import Paper from "@mui/material/Paper"
 import Navbar from "./Navbar"
+import Button from "@mui/material/Button"
 /*
 cart.shoppingCart
 items: [{productId, name, quantity, price, _id(not sure what this is for)
@@ -67,6 +68,7 @@ const Cart = (props: any) => {
               <TableCell align="right">${total}</TableCell>
             </TableRow>
           </TableBody>
+          <Button variant="contained" color='inherit' href="/checkout">Checkout</Button>
         </Table>
 
       </TableContainer>

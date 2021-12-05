@@ -9,10 +9,10 @@ const Home: React.FunctionComponent<Page> = (props) => {
   const { addToCart } = useData()
 
   return (
-    <div>
+    <>
       <Navbar state={props.state} logout={props.function} />
       <Products name="Products" state={props.state} addToCart={addToCart} />
-    </div>
+    </>
   );
 };
 
